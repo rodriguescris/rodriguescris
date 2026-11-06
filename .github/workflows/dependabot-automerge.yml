@@ -1,0 +1,63 @@
+name: Dependabot auto-merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: dependabot-automerge-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: validar YAML
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+
+      - name: Validar sintaxe dos arquivos YAML
+        run: |
+          ruby -ryaml -e '
+            files = Dir[".github/**/*.yml"]
+            abort("nenhum YAML encontrado") if files.empty?
+            files.each do |f|
+              YAML.load_file(f)
+              puts "ok: #{f}"
+            end
+          '
+
+  merge:
+    name: merge (minor/patch)
+    needs: validate
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Ler metadados do PR
+        id: meta
+        uses: dependabot/fetch-metadata@v3.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge automatico (minor e patch)
+        if: steps.meta.outputs.update-type != 'version-update:semver-major'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr merge --squash --delete-branch "$PR_URL"
+
+      - name: Sinalizar atualizacao major
+        if: steps.meta.outputs.update-type == 'version-update:semver-major'
+        run: echo "::notice::Atualizacao major detectada - revisar e mergear manualmente."
