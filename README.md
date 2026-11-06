@@ -2,7 +2,7 @@
   README de perfil do GitHub — github.com/rodriguescris
   ---------------------------------------------------------------
   Publicação:
-  1. O repositório "rodriguescris" já existe (branch padrão: proxmox_traefik).
+  1. O repositório "rodriguescris" já existe (branch padrão: main).
   2. Substitua o README.md da raiz por este arquivo.
   3. O GitHub renderiza o README automaticamente no perfil.
 
