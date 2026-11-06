@@ -10,7 +10,7 @@
   ---------------------------------------------------------------
 -->
 
-<h1 align="center">Cristian Rodrigues Pinto</h1>
+<h1 align="center">Cristian Rodrigues</h1>
 
 <p align="center">
   <b>Analista de TI &amp; Implementações Corporativas</b><br/>
