@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/cristian-rodrigues-pinto-469bb4154">
-    <img src="https://img.shields.io/badge/LinkedIn-Cristian%20Rodrigues%20Pinto-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Cristian%20Rodrigues-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <img src="https://img.shields.io/badge/Florian%C3%B3polis%20%C2%B7%20SC-Brasil-2E8B57?style=flat-square&logo=googlemaps&logoColor=white" alt="Localização" />
 </p>
