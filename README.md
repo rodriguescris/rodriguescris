@@ -11,7 +11,7 @@
 -->
 
 <p align="center">
-  <img src="assets/banner.gif" width="100%" alt="Cristian Rodrigues Pinto — Analista de TI &amp; Implementações Corporativas. Infraestrutura Híbrida · Redes · Segurança · IAM · Linux · Automação" />
+  <img src="assets/banner.gif" width="100%" alt="Cristian Rodrigues — Analista de TI &amp; Implementações Corporativas. Infraestrutura Híbrida · Redes · Segurança · IAM · Linux · Automação" />
 </p>
 
 <p align="center">
