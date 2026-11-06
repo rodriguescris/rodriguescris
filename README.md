@@ -10,11 +10,8 @@
   ---------------------------------------------------------------
 -->
 
-<h1 align="center">Cristian Rodrigues</h1>
-
 <p align="center">
-  <b>Analista de TI &amp; Implementações Corporativas</b><br/>
-  Infraestrutura Híbrida · Redes · Segurança · IAM · Linux · Automação
+  <img src="assets/banner.gif" width="100%" alt="Cristian Rodrigues Pinto — Analista de TI &amp; Implementações Corporativas. Infraestrutura Híbrida · Redes · Segurança · IAM · Linux · Automação" />
 </p>
 
 <p align="center">
