@@ -118,3 +118,14 @@ Aberto a conversas sobre infraestrutura, segurança e automação — e a oportu
     <img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
+
+---
+
+## Contribuições
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rodriguescris/rodriguescris/pacman-output/galaga-contribution-graph-dark.svg">
+    <img src="https://raw.githubusercontent.com/rodriguescris/rodriguescris/pacman-output/galaga-contribution-graph.svg" alt="Gráfico de contribuições do GitHub animado com o jogo Galaga" />
+  </picture>
+</p>
